@@ -6,12 +6,12 @@ USE tienda;
 
 CREATE TABLE fabricante (
   codigo_f INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  nombre VARCHAR(100) NOT NULL
+  nombre_f VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE producto (
   id_product INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  nombre VARCHAR(100) NOT NULL,
+  nombre_p VARCHAR(100) NOT NULL,
   precio DOUBLE NOT NULL,
   codigo_fabricante INT UNSIGNED NOT NULL,
   FOREIGN KEY (codigo_fabricante) REFERENCES fabricante(codigo_f)
