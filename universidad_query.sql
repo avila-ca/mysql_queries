@@ -52,4 +52,4 @@ RIGHT JOIN grado g on a.id_grado = g.id
 GROUP BY g.nombre ORDER BY count(a.nombre) DESC;
 /*3.6*/SELECT g.nombre, count(a.nombre) FROM asignatura a 
 RIGHT JOIN grado g on a.id_grado = g.id 
-WHERE count(a.nombre) >= 40, GROUP BY g.nombre, ORDER BY count(a.nombre) DESC;
+WHERE count(a.nombre) >= 40 GROUP BY g.nombre ORDER BY count(a.nombre) DESC;
